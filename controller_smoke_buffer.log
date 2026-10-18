@@ -1,0 +1,6 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+SCRIPT ERROR: Parse Error: Expected statement, found "else" instead.
+   at: GDScript::reload (res://godot/tests/controller_smoke.gd:96)
+ERROR: Failed to load script "res://godot/tests/controller_smoke.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)

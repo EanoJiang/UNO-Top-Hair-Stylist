@@ -1,0 +1,27 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: stats max_speed is 14
+PASS: stats acceleration is 120
+PASS: stats coyote_time is 0.15
+PASS: stats jump_buffer is 0.2
+PASS: player lands on the platform
+PASS: right input accelerates the player
+PASS: horizontal speed is capped
+PASS: ground deceleration stops the player
+PASS: jump applies upward velocity
+PASS: gravity reduces upward velocity
+PASS: player lands after a jump
+PASS: player can leave the platform
+PASS: coyote jump works after leaving the ledge
+BUFFER PRESS position=(13.56813, 7.253751) grounded=false coyote=0.0 count=0
+BUFFER AFTER position=(14.0441, 3.630912) grounded=false count=0 velocity=(0.0, 15.33333)
+ERROR: jump buffer triggers on landing
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _run (res://godot/tests/controller_smoke.gd:116)
+       [1] _wait_physics (res://godot/tests/controller_smoke.gd:134)
+CONTROLLER_SMOKE_FAIL count=1
+WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 1 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

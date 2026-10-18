@@ -1,0 +1,41 @@
+WorkerThreadPool: 20 threads, 6 max low-priority.
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+TextServer: Added interface "Dummy"
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)"
+Using "default" pen tablet driver...
+
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)".
+CORE API HASH: 2004498165
+EDITOR API HASH: 1696660745
+SceneTreeFTI: traversal method DEFAULT
+Loaded system CA certificates
+Loading resource: res://godot/demo.tscn remapped: res://godot/demo.tscn
+Loading resource: res://godot/scripts/demo.gd remapped: res://godot/scripts/demo.gd
+Completed load for: 'res://godot/scripts/demo.gd' remapped 'res://godot/scripts/demo.gd' at thread -1
+Loading resource: res://godot/player.tscn remapped: res://godot/player.tscn
+Loading resource: res://godot/resources/controller_stats.tres remapped: res://godot/resources/controller_stats.tres
+Completed load for: 'res://godot/resources/controller_stats.tres' remapped 'res://godot/resources/controller_stats.tres' at thread -1
+Loading resource: res://godot/assets/player.png remapped: res://godot/assets/player.png
+Loading resource: res://.godot/imported/player.png-44e9827a9af90ab37f605b0c5a2ad251.ctex remapped: res://.godot/imported/player.png-44e9827a9af90ab37f605b0c5a2ad251.ctex
+Completed load for: 'res://godot/assets/player.png' remapped 'res://godot/assets/player.png' at thread -1
+Loading resource: res://godot/scripts/player_visuals.gd remapped: res://godot/scripts/player_visuals.gd
+Loading resource: res://godot/assets/splat_1.wav remapped: res://godot/assets/splat_1.wav
+Loading resource: res://.godot/imported/splat_1.wav-6055d0fe170d4cac082d11bfb78cc222.sample remapped: res://.godot/imported/splat_1.wav-6055d0fe170d4cac082d11bfb78cc222.sample
+Completed load for: 'res://godot/assets/splat_1.wav' remapped 'res://godot/assets/splat_1.wav' at thread -1
+Loading resource: res://godot/assets/splat_2.wav remapped: res://godot/assets/splat_2.wav
+Loading resource: res://.godot/imported/splat_2.wav-25671ca42a5f60b2ad3dad0ff23e3a58.sample remapped: res://.godot/imported/splat_2.wav-25671ca42a5f60b2ad3dad0ff23e3a58.sample
+Completed load for: 'res://godot/assets/splat_2.wav' remapped 'res://godot/assets/splat_2.wav' at thread -1
+Loading resource: res://godot/assets/splat_3.wav remapped: res://godot/assets/splat_3.wav
+Loading resource: res://.godot/imported/splat_3.wav-740245b42648a3281fe666fe942fa1b9.sample remapped: res://.godot/imported/splat_3.wav-740245b42648a3281fe666fe942fa1b9.sample
+Completed load for: 'res://godot/assets/splat_3.wav' remapped 'res://godot/assets/splat_3.wav' at thread -1
+Completed load for: 'res://godot/scripts/player_visuals.gd' remapped 'res://godot/scripts/player_visuals.gd' at thread -1
+Completed load for: 'res://godot/player.tscn' remapped 'res://godot/player.tscn' at thread -1
+Loading resource: res://godot/scenes/platform.tscn remapped: res://godot/scenes/platform.tscn
+Loading resource: res://godot/assets/square.png remapped: res://godot/assets/square.png
+Loading resource: res://.godot/imported/square.png-95db2e76104a562251a9a21a45cce647.ctex remapped: res://.godot/imported/square.png-95db2e76104a562251a9a21a45cce647.ctex
+Completed load for: 'res://godot/assets/square.png' remapped 'res://godot/assets/square.png' at thread -1
+Completed load for: 'res://godot/scenes/platform.tscn' remapped 'res://godot/scenes/platform.tscn' at thread -1
+Completed load for: 'res://godot/demo.tscn' remapped 'res://godot/demo.tscn' at thread -1
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"

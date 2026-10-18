@@ -1,0 +1,21 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: stats max_speed is 14
+PASS: stats acceleration is 120
+PASS: stats coyote_time is 0.15
+PASS: stats jump_buffer is 0.2
+PASS: player lands on the platform
+PASS: right input accelerates the player
+PASS: horizontal speed is capped
+PASS: ground deceleration stops the player
+PASS: jump applies upward velocity
+PASS: gravity reduces upward velocity
+PASS: player lands after a jump
+PASS: player can leave the platform
+PASS: coyote jump works after leaving the ledge
+ERROR: jump buffer triggers on landing
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _run (res://godot/tests/controller_smoke.gd:114)
+       [1] _wait_physics (res://godot/tests/controller_smoke.gd:132)
+CONTROLLER_SMOKE_FAIL count=1

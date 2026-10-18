@@ -1,0 +1,132 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://godot/scripts/player_controller.gd" id="1_controller"]
+[ext_resource type="Resource" path="res://godot/resources/controller_stats.tres" id="2_stats"]
+[ext_resource type="Texture2D" path="res://godot/assets/player.png" id="3_player"]
+[ext_resource type="Script" path="res://godot/scripts/player_visuals.gd" id="4_visuals"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_body"]
+radius = 0.45
+height = 1.4
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ground_cast"]
+size = Vector2(0.8, 0.05)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ceiling_cast"]
+size = Vector2(0.8, 0.05)
+
+[sub_resource type="Gradient" id="Gradient_particles"]
+colors = PackedColorArray(0.2, 0.8, 0.65, 0.9, 0.1, 0.25, 0.2, 0.0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture_particles"]
+gradient = SubResource("Gradient_particles")
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 1
+script = ExtResource("1_controller")
+stats = ExtResource("2_stats")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.7)
+shape = SubResource("CapsuleShape2D_body")
+
+[node name="GroundCast" type="ShapeCast2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, 1.4)
+target_position = Vector2(0, 0.05)
+collision_mask = 1
+exclude_parent = true
+shape = SubResource("RectangleShape2D_ground_cast")
+
+[node name="CeilingCast" type="ShapeCast2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, 0.0)
+target_position = Vector2(0, -0.05)
+collision_mask = 1
+exclude_parent = true
+shape = SubResource("RectangleShape2D_ceiling_cast")
+
+[node name="Visual" type="Node2D" parent="."]
+position = Vector2(0, 0.7)
+script = ExtResource("4_visuals")
+
+[node name="Sprite" type="Sprite2D" parent="Visual"]
+unique_name_in_owner = true
+texture_filter = 1
+texture = ExtResource("3_player")
+scale = Vector2(0.001953125, 0.001953125)
+
+[node name="GroundColorRay" type="RayCast2D" parent="Visual"]
+unique_name_in_owner = true
+target_position = Vector2(0, 2)
+collision_mask = 1
+collide_with_areas = false
+
+[node name="MoveParticles" type="CPUParticles2D" parent="Visual"]
+unique_name_in_owner = true
+position = Vector2(0, 0.55)
+emitting = true
+amount = 10
+lifetime = 0.65
+direction = Vector2(-1, 0)
+spread = 55.0
+gravity = Vector2(0, 12)
+initial_velocity_min = 0.2
+initial_velocity_max = 0.8
+scale_amount_min = 0.006
+scale_amount_max = 0.016
+color = Color(0.2, 0.8, 0.65, 0.8)
+color_ramp = SubResource("GradientTexture_particles")
+
+[node name="JumpParticles" type="CPUParticles2D" parent="Visual"]
+unique_name_in_owner = true
+position = Vector2(0, 0.55)
+emitting = false
+one_shot = true
+amount = 12
+lifetime = 0.35
+direction = Vector2(0, 1)
+spread = 180.0
+gravity = Vector2(0, 18)
+initial_velocity_min = 1.0
+initial_velocity_max = 2.5
+scale_amount_min = 0.006
+scale_amount_max = 0.014
+color = Color(0.2, 0.8, 0.65, 0.85)
+
+[node name="LaunchParticles" type="CPUParticles2D" parent="Visual"]
+unique_name_in_owner = true
+position = Vector2(0, 0.55)
+emitting = false
+one_shot = true
+amount = 8
+lifetime = 0.25
+direction = Vector2(0, 1)
+spread = 80.0
+gravity = Vector2(0, 10)
+initial_velocity_min = 1.0
+initial_velocity_max = 1.8
+scale_amount_min = 0.005
+scale_amount_max = 0.012
+color = Color(0.4, 0.95, 0.8, 0.7)
+
+[node name="LandParticles" type="CPUParticles2D" parent="Visual"]
+unique_name_in_owner = true
+position = Vector2(0, 0.55)
+emitting = false
+one_shot = true
+amount = 16
+lifetime = 0.42
+direction = Vector2(0, -1)
+spread = 130.0
+gravity = Vector2(0, 15)
+initial_velocity_min = 0.8
+initial_velocity_max = 2.2
+scale_amount_min = 0.006
+scale_amount_max = 0.015
+color = Color(0.2, 0.8, 0.65, 0.8)
+
+[node name="FootstepAudio" type="AudioStreamPlayer2D" parent="Visual"]
+unique_name_in_owner = true
+volume_db = -8.0

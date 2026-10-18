@@ -1,0 +1,74 @@
+WorkerThreadPool: 20 threads, 15 max low-priority.
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+TextServer: Added interface "Dummy"
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)"
+Using "default" pen tablet driver...
+
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)".
+CORE API HASH: 2004498165
+EDITOR API HASH: 1696660745
+SceneTreeFTI: traversal method DEFAULT
+Loading resource: C:/Users/jiangyinuo/AppData/Roaming/Godot/editor_settings-4.7.tres remapped: C:/Users/jiangyinuo/AppData/Roaming/Godot/editor_settings-4.7.tres
+Completed load for: 'C:/Users/jiangyinuo/AppData/Roaming/Godot/editor_settings-4.7.tres' remapped 'C:/Users/jiangyinuo/AppData/Roaming/Godot/editor_settings-4.7.tres' at thread -1
+EditorSettings: Load OK!
+EditorTheme: Generating new theme for the config '3810048042'.
+EditorTheme: Generating new icons.
+EditorTheme: Generating new fonts.
+EditorTheme: Generating new styles.
+Loading resource: C:/Users/jiangyinuo/AppData/Local/Godot/editor_doc_cache-4.7.res remapped: C:/Users/jiangyinuo/AppData/Local/Godot/editor_doc_cache-4.7.res
+Loaded system CA certificates
+Completed load for: 'C:/Users/jiangyinuo/AppData/Local/Godot/editor_doc_cache-4.7.res' remapped 'C:/Users/jiangyinuo/AppData/Local/Godot/editor_doc_cache-4.7.res' at thread -1
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started 项目初始化 (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | 正在扫描文件结构……[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | 正在加载全局类名……[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | 正在校验 GDExtension……[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | 正在创建自动加载脚本……[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | 正在初始化插件……[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | 正在启动文件扫描……[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | Started 正在注册全局类…… (3 steps)[39m[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | UltimatePlayerController[39m[0m
+[  25% ] [90m[1mupdate_scripts_classes[22m | PlayerVisuals[39m[0m
+[  50% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[92m[ DONE ][39m [1mupdate_scripts_classes[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started 正在加载编辑器 (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | 正在加载编辑器布局……[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | 正在加载停靠面板……[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+Loading resource: res://godot/demo.tscn remapped: res://godot/demo.tscn
+Loading resource: res://godot/scripts/demo.gd remapped: res://godot/scripts/demo.gd
+Completed load for: 'res://godot/scripts/demo.gd' remapped 'res://godot/scripts/demo.gd' at thread -1
+Loading resource: res://godot/player.tscn remapped: res://godot/player.tscn
+Loading resource: res://godot/resources/controller_stats.tres remapped: res://godot/resources/controller_stats.tres
+Completed load for: 'res://godot/resources/controller_stats.tres' remapped 'res://godot/resources/controller_stats.tres' at thread -1
+Loading resource: res://godot/assets/player.png remapped: res://godot/assets/player.png
+Loading resource: res://.godot/imported/player.png-44e9827a9af90ab37f605b0c5a2ad251.ctex remapped: res://.godot/imported/player.png-44e9827a9af90ab37f605b0c5a2ad251.ctex
+Completed load for: 'res://godot/assets/player.png' remapped 'res://godot/assets/player.png' at thread -1
+Loading resource: res://godot/scripts/player_visuals.gd remapped: res://godot/scripts/player_visuals.gd
+Loading resource: res://godot/assets/splat_1.wav remapped: res://godot/assets/splat_1.wav
+Loading resource: res://.godot/imported/splat_1.wav-6055d0fe170d4cac082d11bfb78cc222.sample remapped: res://.godot/imported/splat_1.wav-6055d0fe170d4cac082d11bfb78cc222.sample
+Completed load for: 'res://godot/assets/splat_1.wav' remapped 'res://godot/assets/splat_1.wav' at thread -1
+Loading resource: res://godot/assets/splat_2.wav remapped: res://godot/assets/splat_2.wav
+Loading resource: res://.godot/imported/splat_2.wav-25671ca42a5f60b2ad3dad0ff23e3a58.sample remapped: res://.godot/imported/splat_2.wav-25671ca42a5f60b2ad3dad0ff23e3a58.sample
+Completed load for: 'res://godot/assets/splat_2.wav' remapped 'res://godot/assets/splat_2.wav' at thread -1
+Loading resource: res://godot/assets/splat_3.wav remapped: res://godot/assets/splat_3.wav
+Loading resource: res://.godot/imported/splat_3.wav-740245b42648a3281fe666fe942fa1b9.sample remapped: res://.godot/imported/splat_3.wav-740245b42648a3281fe666fe942fa1b9.sample
+Completed load for: 'res://godot/assets/splat_3.wav' remapped 'res://godot/assets/splat_3.wav' at thread -1
+Completed load for: 'res://godot/scripts/player_visuals.gd' remapped 'res://godot/scripts/player_visuals.gd' at thread -1
+Completed load for: 'res://godot/player.tscn' remapped 'res://godot/player.tscn' at thread -1
+Loading resource: res://godot/scenes/platform.tscn remapped: res://godot/scenes/platform.tscn
+Loading resource: res://godot/assets/square.png remapped: res://godot/assets/square.png
+Loading resource: res://.godot/imported/square.png-95db2e76104a562251a9a21a45cce647.ctex remapped: res://.godot/imported/square.png-95db2e76104a562251a9a21a45cce647.ctex
+Completed load for: 'res://godot/assets/square.png' remapped 'res://godot/assets/square.png' at thread -1
+Completed load for: 'res://godot/scenes/platform.tscn' remapped 'res://godot/scenes/platform.tscn' at thread -1
+Completed load for: 'res://godot/demo.tscn' remapped 'res://godot/demo.tscn' at thread -1
+Script docs haven't been properly loaded or regenerated, so don't save them to disk.
+EditorSettings: Save OK!
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Orphan StringName: Node (static: 6, total: 7)
+StringName: 1 unclaimed string names at exit.

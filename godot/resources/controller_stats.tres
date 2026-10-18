@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ControllerStats" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://godot/scripts/controller_stats.gd" id="1_stats"]
+
+[resource]
+script = ExtResource("1_stats")
+ground_collision_mask = 1
+grounder_distance = 0.05
+snap_input = true
+vertical_dead_zone_threshold = 0.3
+horizontal_dead_zone_threshold = 0.1
+max_speed = 14.0
+acceleration = 120.0
+ground_deceleration = 60.0
+air_deceleration = 30.0
+grounding_force = 1.5
+jump_power = 36.0
+max_fall_speed = 40.0
+fall_acceleration = 110.0
+jump_end_early_gravity_modifier = 3.0
+coyote_time = 0.15
+jump_buffer = 0.2
